@@ -1,14 +1,14 @@
 public class Test {
     public static void main(String[] args) {
-        Logger logger1 = Logger.getInstance();
+        Log log1 = Log.getInstance();
         System.out.println("Login Page Config:");
-        logger1.logMessage("User opened Login Page");
+        log1.logMessage("User opened Login Page");
         System.out.println();
-         Logger logger2 = Logger.getInstance();
+         Log log2 = Log.getInstance();
         System.out.println("Home Page Config:");
-        logger2.logMessage("User opened Home Page");
+        log2.logMessage("User opened Home Page");
         System.out.println();
-        if (logger1 == logger2) {
+        if (log1 == log2) {
             System.out.println("Same Logger object ");
         }
 
