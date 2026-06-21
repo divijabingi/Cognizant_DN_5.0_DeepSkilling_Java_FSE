@@ -1,19 +1,24 @@
 public class Main {
+
     public static void main(String[] args) {
 
-        System.out.println(" Document Management System\n");
-        DocumentFactory wordFactory = new WordFactory();
-        Document wordDoc = wordFactory.createDocument();
+        System.out.println("Document Management System\n");
+
+        DocFactory wordFactory = new WordFactory();
+        Doc wordDoc = wordFactory.createDocument();
         wordDoc.open();
         wordDoc.close();
-        DocumentFactory pdfFactory = new PdfFactory();
-         Document pdfDoc = pdfFactory.createDocument();
+
+        DocFactory pdfFactory = new PdfFactory();
+        Doc pdfDoc = pdfFactory.createDocument();
         pdfDoc.open();
         pdfDoc.close();
-        DocumentFactory excelFactory = new ExcelFactory();
-        Document excelDoc = excelFactory.createDocument();
-          excelDoc.open();
+
+        DocFactory excelFactory = new ExcelFactory();
+        Doc excelDoc = excelFactory.createDocument();
+        excelDoc.open();
         excelDoc.close();
-        System.out.println(" All Documents Processed ");
+
+        System.out.println("All Documents Processed");
     }
 }
