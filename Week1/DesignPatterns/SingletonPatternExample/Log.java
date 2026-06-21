@@ -1,10 +1,10 @@
-public class Logger {
-    private static Logger instance;
-    private Logger() {
+public class Log {
+    private static Log instance;
+    private Log() {
     }
-    public static Logger getInstance() {
+    public static Log getInstance() {
         if (instance == null){
-            instance = new Logger();
+            instance = new Log();
         }
            return instance;
     }
