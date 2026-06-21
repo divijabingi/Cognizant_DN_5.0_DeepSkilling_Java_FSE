@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION HasSufficientBalance(
+CREATE OR REPLACE FUNCTION CheckBalance(
     acc_id NUMBER,
     amount NUMBER
 )
@@ -21,5 +21,5 @@ END;
 
 SELECT AccountID,
        Balance,
-       HasSufficientBalance(AccountID,5000) AS Status
+       CheckBalance(AccountID,5000) AS Status
 FROM Accounts;
