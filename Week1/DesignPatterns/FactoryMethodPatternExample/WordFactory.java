@@ -1,7 +1,7 @@
-public class WordFactory extends DocumentFactory {
+public class WordFactory extends DocFactory {
 
     @Override
-    public Document createDocument() {
-        return new WordDocument();
+    public Doc createDocument() {
+        return new WordDoc();
     }
 }
