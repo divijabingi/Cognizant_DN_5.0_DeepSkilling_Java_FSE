@@ -1,4 +1,4 @@
-public class ExcelFactory extends DocumentFactory {
+public class ExcelFactory extends DocFactory {
 
     @Override
     public Document createDocument() {
