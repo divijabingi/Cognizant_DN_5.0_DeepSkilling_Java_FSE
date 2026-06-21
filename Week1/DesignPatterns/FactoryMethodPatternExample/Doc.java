@@ -1,4 +1,4 @@
-public interface Document {
+public interface Doc {
     void open();
     void close();
 }
