@@ -1,4 +1,4 @@
-public class Pdf implements Doc {
+public class PdfDoc implements Doc {
     @Override
     public void open() {
         System.out.println(" PDF Document is ready to view!");
