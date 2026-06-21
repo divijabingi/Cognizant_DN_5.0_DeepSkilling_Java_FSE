@@ -1,4 +1,4 @@
-public class ExcelDocument implements Document {
+public class Excel implements Document {
     @Override
     public void open() {
         System.out.println(" Excel Document is ready for data entry!");
