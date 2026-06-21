@@ -1,7 +1,7 @@
-public class PdfFactory extends DocumentFactory {
+public class PdfFactory extends DocFactory {
 
     @Override
-    public Document createDocument() {
-        return new PdfDocument();
+    public Doc createDocument() {
+        return new PdfDoc();
     }
 }
