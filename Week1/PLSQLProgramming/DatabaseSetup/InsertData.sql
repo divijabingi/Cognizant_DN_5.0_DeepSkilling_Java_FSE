@@ -1,15 +1,14 @@
 INSERT INTO Customers VALUES
-(1,'John Doe',TO_DATE('1958-05-15','YYYY-MM-DD'),12000,SYSDATE);
+(1,'Harsha',TO_DATE('1958-05-15','YYYY-MM-DD'),12000,SYSDATE);
 
 INSERT INTO Customers VALUES
-(2,'Jane Smith',TO_DATE('1990-07-20','YYYY-MM-DD'),15000,SYSDATE);
+(2,'Hema Latha',TO_DATE('1990-07-20','YYYY-MM-DD'),15000,SYSDATE);
 
 INSERT INTO Customers VALUES
 (3,'Rahul Kumar',TO_DATE('1960-03-10','YYYY-MM-DD'),8000,SYSDATE);
 
 INSERT INTO Customers VALUES
 (4,'Divija',TO_DATE('2005-04-07','YYYY-MM-DD'),20000,SYSDATE);
-
 
 
 INSERT INTO Accounts VALUES
@@ -55,11 +54,11 @@ INSERT INTO Loans VALUES
 
 
 INSERT INTO Employees VALUES
-(1,'Alice Johnson','Manager',70000,'HR',
+(1,'Anil Kumar','Manager',70000,'HR',
 TO_DATE('2015-06-15','YYYY-MM-DD'));
 
 INSERT INTO Employees VALUES
-(2,'Bob Brown','Developer',60000,'IT',
+(2,'Vishnu','Developer',60000,'IT',
 TO_DATE('2017-03-20','YYYY-MM-DD'));
 
 COMMIT;
