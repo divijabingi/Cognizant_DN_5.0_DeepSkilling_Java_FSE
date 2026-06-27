@@ -13,7 +13,8 @@ public class BookService {
     }
 
     public void listBooks() {
-        System.out.println("Library Books");
+         System.out.println("Accessing BookRepository through Dependency Injection.");
+        System.out.println("Displaying Library Books...");
         bookRepository.findAll();
     }
 }
