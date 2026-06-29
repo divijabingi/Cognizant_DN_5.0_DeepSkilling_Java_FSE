@@ -1,9 +1,6 @@
-CREATE DATABASE IF NOT EXISTS ormlearn;
+CREATE DATABASE ormlearn;
 
 USE ormlearn;
-
-DROP TABLE IF EXISTS country;
-
 CREATE TABLE country (
     co_code VARCHAR(2) PRIMARY KEY,
     co_name VARCHAR(100)
@@ -174,7 +171,6 @@ insert into country (co_code, co_name) values ("NU", "Niue");
 insert into country (co_code, co_name) values ("NF", "Norfolk Island");
 insert into country (co_code, co_name) values ("MP", "Northern Mariana Islands");
 insert into country (co_code, co_name) values ("NO", "Norway");
-
 insert into country (co_code, co_name) values ("OM", "Oman");
 insert into country (co_code, co_name) values ("PK", "Pakistan");
 insert into country (co_code, co_name) values ("PW", "Palau");
@@ -261,13 +257,3 @@ insert into country (co_code, co_name) values ("ZW", "Zimbabwe");
 insert into country (co_code, co_name) values ("AX", "Åland Islands");
 
 SELECT COUNT(*) FROM country;
-SELECT * FROM country WHERE co_code='IN';
-
-
-
-
-
-
-
-
-
