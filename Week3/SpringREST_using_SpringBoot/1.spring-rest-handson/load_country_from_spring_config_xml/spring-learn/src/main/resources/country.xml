@@ -4,13 +4,20 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
                            http://www.springframework.org/schema/beans/spring-beans.xsd">
-
-    <bean id="country"
-          class="com.cognizant.spring_learn.model.Country">
-
-        <property name="code" value="IN"/>
-        <property name="name" value="India"/>
-
-    </bean>
-
+<bean id="india"
+      class="com.cognizant.spring_learn.model.Country">
+    <property name="code" value="IN"/>
+    <property name="name" value="India"/>
+</bean>
+<bean id="japan"
+      class="com.cognizant.spring_learn.model.Country">
+    <property name="code" value="JP"/>
+    <property name="name" value="Japan"/>
+</bean>
+<bean id="usa"
+      class="com.cognizant.spring_learn.model.Country">
+    <property name="code" value="US"/>
+    <property name="name" value="United States"/>
+</bean>
+       
 </beans>
