@@ -18,11 +18,13 @@ public class SpringLearnApplication implements CommandLineRunner {
     @Override
     public void run(String... args) {
 
-        ApplicationContext context =
-                new ClassPathXmlApplicationContext("country.xml");
-
-        Country country = context.getBean("country", Country.class);
-
-        System.out.println("Country"+"[Code:"+country.getCode() + "  Name:" + country.getName()+"]");
+        ApplicationContext context = new ClassPathXmlApplicationContext("country.xml");
+        
+        Country india = context.getBean("india", Country.class);
+        Country usa = context.getBean("usa", Country.class);
+        Country japan = context.getBean("japan", Country.class);
+        System.out.println("Country [Code:" + india.getCode() + "  Name:" + india.getName() + "]");
+        System.out.println("Country [Code:" + japan.getCode() + "  Name:" + japan.getName() + "]");
+        System.out.println("Country [Code:" + usa.getCode() + "  Name:" + usa.getName() + "]");
     }
 }
